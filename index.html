@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,34 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container flex">
-        <div class="left red-border">
-            <div class="home"></div>
-            <div class="library"></div>
+        <div class="left bg-black">
+            <div class="home p-1 m-1 bg-grey rounded">
+                <div class="logo">
+                    <img src="svg\logo.svg" alt="" class="invert">
+                </div>
+                <ul>
+                    <li><img src="svg\home.svg" alt="" class="invert">Home</li>
+                    <li><img src="svg\search.svg" alt="" class="invert">Search</li>
+                </ul>
+            </div>
+            <div class="library p-1 m-1 bg-grey rounded">
+                <div class="librarylogo">
+                    <img src="svg\library.svg" alt="" class="invert">
+                    Your Library
+                </div>
+            </div>
         </div>
-        <div class="right red-border">
+        <div class="right bg-black">
             
         </div>
     </div>
 
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
