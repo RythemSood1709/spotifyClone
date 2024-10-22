@@ -40,3 +40,11 @@
 .p-1 {
     padding: 15px;
 }
+
+.nowrap {
+    text-wrap: nowrap;
+}
+
+.wrap {
+    text-wrap: wrap;
+}
