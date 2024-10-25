@@ -48,3 +48,32 @@
 .wrap {
     text-wrap: wrap;
 }
+
+/* WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 12px;  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Track background (the empty space in the scrollbar) */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444;  /* Scrollbar handle color */
+    border-radius: 6px;      /* Roundness of the scrollbar handle */
+    border: 2px solid #1e1e1e;  /* Space around the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;  /* Handle color on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;        /* Makes the scrollbar thinner */
+    scrollbar-color: #444 #1e1e1e; /* Handle and track colors */
+}
+
+html:hover {
+    scrollbar-color: #555 #1e1e1e; /* Hover effect for Firefox */
+}
