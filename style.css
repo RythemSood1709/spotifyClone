@@ -19,8 +19,9 @@ body{
 
 .right {
     width: 75vw;
-    margin: 15px;
-    margin-left: 0;
+    margin: 15px 0;
+    padding-right: 10px;
+    position: relative;
 }
 
 .home ul li{
@@ -70,6 +71,7 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: rgb(34, 34, 34);
+    height: 60px;
 }
 
 .header > * {
@@ -171,4 +173,18 @@ body{
     font-size: 1.01em;
     color: black;
     width: 4.1rem;
-} 
+}
+
+.playbar {
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(102, 146, 102);
+    width: 95%;
+    padding: 10px;
+}
+
+.songButtons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
