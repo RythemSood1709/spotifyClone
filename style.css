@@ -19,8 +19,9 @@ body{
 
 .right {
     width: 75vw;
-    margin: 15px;
-    margin-left: 0;
+    margin: 15px 0;
+    padding-right: 10px;
+    position: relative;
 }
 
 .home ul li{
@@ -70,6 +71,7 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: rgb(34, 34, 34);
+    height: 60px;
 }
 
 .header > * {
@@ -171,4 +173,58 @@ body{
     font-size: 1.01em;
     color: black;
     width: 4.1rem;
-} 
+}
+
+.playbar {
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(201, 201, 201);
+    width: 90%;
+    padding: 10px;
+}
+
+.songButtons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.songList ul {
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+    list-style-type: decimal;
+}
+
+.songList ul li{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 12px;
+    justify-content: space-between;
+}
+
+.playNow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playNow span {
+    font-size: 15px;
+    width: 80px;
+}
+
+.songList .info {
+    font-size: 15px;
+    width: 344px;
+}
+
+.songList{
+    height: 620px;
+    overflow: auto;
+    margin: 30px 0;
+}
