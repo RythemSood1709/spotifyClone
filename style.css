@@ -178,7 +178,7 @@ body{
 .playbar {
     bottom: 20px;
     position: fixed;
-    background-color: rgba(152, 154, 152, 0.626);
+    background-color: #515c5e7b;
     width: 70vw;
     padding: 12px;
     border-radius: 3px;
@@ -189,6 +189,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 16px;
+    margin-top: 10px;
 }
 
 .songList ul {
@@ -233,17 +234,23 @@ body{
 
 .seekbar {
     height: 2px;
-    width: 98%;
-    border: 2px solid rgb(255, 255, 255);
+    width: 97%;
+    border: 2px solid rgb(179, 179, 179);
+    /* background-color: white; */
     border-radius: 10px;
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 0;
+    margin: 5px;
 }
 
 .circle {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     border-radius: 13px;
     background-color: white;
-    position: absolute;
+    position: relative;
+    bottom: 4px;
+    left: 50%;
+    transition: left 0.3s;
 }
