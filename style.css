@@ -20,7 +20,7 @@ body{
 .right {
     width: 75vw;
     margin: 15px 0;
-    padding-right: 10px;
+    margin-right: 10px;
     position: relative;
 }
 
@@ -176,11 +176,13 @@ body{
 }
 
 .playbar {
-    bottom: 0;
-    position: absolute;
-    background-color: rgb(201, 201, 201);
-    width: 90%;
-    padding: 10px;
+    bottom: 20px;
+    position: fixed;
+    background-color: rgba(152, 154, 152, 0.626);
+    width: 70vw;
+    padding: 12px;
+    border-radius: 3px;
+    height: 30px;
 }
 
 .songButtons {
@@ -224,7 +226,24 @@ body{
 }
 
 .songList{
-    height: 620px;
+    height: 544px;
     overflow: auto;
     margin: 30px 0;
+}
+
+.seekbar {
+    height: 2px;
+    width: 98%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 13px;
+    background-color: white;
+    position: absolute;
 }
