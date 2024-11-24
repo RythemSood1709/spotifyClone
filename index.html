@@ -12,6 +12,9 @@
 <body>
     <div class="container flex">
         <div class="left bg-black">
+            <div class="close invert">
+                <img src="Assets/svg/close.svg" alt="">
+            </div>
             <div class="home p-1 m-1 bg-grey rounded">
                 <div class="logo">
                     <img src="Assets/svg/logo.svg" alt="" class="invert">
@@ -27,8 +30,8 @@
                     <h2 class="nowrap">Your Library</h2>
                 </div>
                 <div class="songList">
-                <ul>
-                </ul>
+                    <ul>
+                    </ul>
                 </div>
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
@@ -46,6 +49,7 @@
         <div class="right bg-black bg-grey rounded">
             <div class="header p-1 rounded">
                 <div class="nav">
+                    <img src="Assets/svg/hamburger.svg" class="hamburger invert" alt="">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
@@ -116,25 +120,27 @@
                 <div class="playbar">
                     <div class="seekbar">
                         <div class="circle">
-                            
+
                         </div>
                     </div>
-                    <div class="songInfo">
-                        
-                    </div>
-                    <div class="songButtons invert">
-                        <img src="Assets/svg/prevsong.svg" alt="">
-                        <img src="Assets/svg/play.svg" alt="">
-                        <img src="Assets/svg/nextsong.svg" alt="">
-                    </div>
-                    <div class="songTime">
+                    <div class="aboveBar">
+                        <div class="songInfo">
+
+                        </div>
+                        <div class="songButtons invert">
+                            <img id="previous" src="Assets/svg/prevsong.svg" alt="">
+                            <img id="play" src="Assets/svg/play.svg" alt="">
+                            <img id="next" src="Assets/svg/nextsong.svg" alt="">
+                        </div>
+                        <div class="songTime">
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

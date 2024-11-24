@@ -21,7 +21,7 @@ body{
     width: 75vw;
     margin: 15px 0;
     margin-right: 10px;
-    position: relative;
+    /* position: relative; */
 }
 
 .home ul li{
@@ -90,6 +90,7 @@ body{
     margin: 30px;
     overflow-y: scroll;
     max-height: 70vh;
+    /* justify-content: center; */
 }
 
 .spotifyPlaylists .card {
@@ -98,7 +99,7 @@ body{
     margin: 5px;
     border-radius: 5px;
     background-color: #252525;
-    position: relative;
+    /* position: relative; */
 }
 
 .card img {
@@ -189,7 +190,6 @@ body{
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-top: 10px;
 }
 
 .songList ul {
@@ -233,7 +233,7 @@ body{
 }
 
 .seekbar {
-    height: 2px;
+    height: 1px;
     width: 97%;
     border: 2px solid rgb(179, 179, 179);
     /* background-color: white; */
@@ -242,6 +242,7 @@ body{
     /* bottom: 0; */
     top: 0;
     margin: 5px;
+    cursor: pointer;
 }
 
 .circle {
@@ -251,6 +252,79 @@ body{
     background-color: white;
     position: relative;
     bottom: 4px;
-    left: 50%;
-    transition: left 0.3s;
+    left: 0%;
+    transition: left 0.2s;
 }
+
+.aboveBar {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.songInfo, .songTime {
+    padding: 0 12px;
+    width: auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 1400px){
+    .left {
+        position: absolute;
+        left: -120%;
+        transition: all 0.3s;
+        width: 373px;
+        background-color: #000;
+    }
+    .right{
+        width: 100vw;
+        /* height: 100vw; */
+    }
+    .playbar{
+        width: 95vw;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+
+    .left .close {
+        display: inline;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        width: 29px;
+    }
+    
+    .playbar {
+        width: calc(100vw-60px);
+    }
+
+    .seekbar {
+        width: calc(100vw-70px);
+    }
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width:499px){
+    .aboveBar {
+        /* width: 354px; */
+        font-size: 12px;
+    }
+}
+
+@media (max-width:570px){
+    .cardContainer {
+        justify-content: center;
+    }
+    .card {
+        width: 90vw;
+    }
+}
+
