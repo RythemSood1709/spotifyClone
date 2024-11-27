@@ -355,9 +355,17 @@ body{
     gap: 10px;
 }
 
+.volumeimg {
+    cursor: pointer;
+}
+
 .range {
     margin-top: 3px;
     accent-color: rgb(47, 172, 59);
+}
+
+.range input {
+    cursor: pointer;
 }
 
 
