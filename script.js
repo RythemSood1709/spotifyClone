@@ -83,9 +83,11 @@ async function displayAlbums() {
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
+        
 
         if (e.href.includes("/Assets/songs/") && !e.href.includes(".htaccess")) {
-            let folder = e.href.split("/").slice(-1)[0];
+            let folder = e.href.split("/").filter(Boolean).slice(-1)[0];
+
 
             //get the metadata of the folder
             let a = await fetch(`/Assets/songs/${folder}/info.json`);
@@ -102,7 +104,7 @@ async function displayAlbums() {
                     </div>
                 </div>
 
-                <img src="Assets/songs/${folder}/cover.jpeg" alt="Happy">
+                <img src="/Assets/songs/${folder}/cover.jpeg" alt="Happy">
                 <h2>${response.title}</h2>
                 <p>${response.description}</p>
             </div>`
